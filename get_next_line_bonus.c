@@ -6,7 +6,7 @@
 /*   By: pthomas <pthomas@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 08:51:40 by pthomas           #+#    #+#             */
-/*   Updated: 2020/12/10 16:02:45 by pthomas          ###   ########lyon.fr   */
+/*   Updated: 2020/12/11 15:56:34 by pthomas          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,9 +90,6 @@ int			get_next_line(int fd, char **line)
 		ft_lstdelone(&start, act);
 		return (0);
 	}
-	else
-	{
-		(act->i)++;
-		return (1);
-	}
+	(act->i)++;
+	return (1);
 }
